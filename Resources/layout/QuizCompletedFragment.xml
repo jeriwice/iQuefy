@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="290dp"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ImageView_QuizCompletedPage"
+        android:src="@drawable/correct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/TextView_QuizCompletedPage_ScoreText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp" 
+        android:text="Total Score: 4/5"
+        android:layout_marginTop="5dp"
+    />
+
+    <TextView
+        android:id="@+id/TextView_QuizCompletedPage_RemarkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Very good result."
+        android:layout_marginTop="15dp"
+    />
+    
+    <Button
+        android:id="@+id/Button_QuizCompletedPage_MainMenu"
+        android:background="@drawable/roundbutton_green"
+        android:text="Main Menu" 
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="40dp"
+        android:layout_width="185dp"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+    />
+
+</LinearLayout>

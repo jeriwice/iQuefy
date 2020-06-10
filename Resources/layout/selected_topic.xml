@@ -1,0 +1,46 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ImageView_DescriptionPage_ImagePlaceholder"
+        style="@style/ImageView_DescriptionPage_ImagePlaceHolder"
+        android:src="@drawable/history"
+        />
+
+    <TextView
+        android:id="@+id/TextView_DescriptionPage_TopicText"
+        style="@style/TextView_DescriptionPage_TopicText"
+        android:text="Quiz Topic"
+        />
+
+    <TextView
+        android:id="@+id/TextView_DescriptionPage_DescriptionText"
+        style="@style/TextView_DescriptionPage_DescriptionText"
+        android:text="lorem ipsum, sometimes known as a dummy text, lorem ipsum, sometimes known as a dummy text lorem ipsum, sometimes known as a dummy text lorem ipsum, sometimes known as a dummy text lorem ipsum, sometimes known as a dummy text lorem ipsum, sometimes known as a dummy text lorem ipsum, sometimes known as a dummy text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        />
+
+    
+
+    <Button
+        android:id="@+id/Button_DescriptionPage_StartTest"
+        android:background="@drawable/roundbutton"
+        android:text="Start Test" 
+        android:layout_marginTop="130dp"
+        android:layout_height="40dp"
+        android:layout_width="185dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+                />
+
+
+
+</LinearLayout>

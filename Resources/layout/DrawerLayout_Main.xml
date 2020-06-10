@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ToolBar_QuizMainMenu_CardView"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.DarkAppBar"
+        />
+    
+    <TextView
+        android:id="@+id/TextView_MainMenu_Instruction"
+        style="@style/TextView_MainMenu_QuizTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Select a topic to test yourself"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <!--Row One-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R1C1_History"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="145dp"
+                android:layout_width="150dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_RICI_History"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_History"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/history"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="History"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R1C2_Geography"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="145dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_RIC2_Geography"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_Geography"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/geography"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="Geography"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Row Two-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R2C1_Space"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="150dp"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_R2CI_Space"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_Space"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" 
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/space"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="Space"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R1C2_Engineering"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_R2C2_Engineering"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_Engineering"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/engineering"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="Engineering"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Row Three-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R1C1_Programming"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="150dp"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_R3CI_Programming"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_Programming"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/programming"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="Programming"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView_R1C2_Business"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="145dp">
+
+                <LinearLayout
+                    android:id="@+id/CardView_LinearLayout_R3C2_Business"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/CardView_ImageView_Business"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/Business"/>
+
+                    <View
+                        android:background="@color/colorAsh"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        style="@style/TextView_MainMenu_QuizTopic"
+                        android:text="Business"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

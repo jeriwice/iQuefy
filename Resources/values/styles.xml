@@ -1,0 +1,88 @@
+<resources>
+
+  <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+  
+  <!-- White Text Theme-->
+    <style name="AppTheme.DarkAppBar" parent="ThemeOverlay.AppCompat.Dark"/>
+    
+  <!-- Splash Screen SetUp Theme-->
+    <style name="MyTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowBackground">@drawable/splash</item>
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowFullscreen">false</item>
+    </style>
+  
+  <!--MainMenu Quiz Topic TextView-->
+    <style name="TextView_MainMenu_QuizTopic" parent="AppTheme">
+      <item name="android:gravity">center</item>
+      <item name="android:layout_gravity">center_vertical</item>
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_marginTop">6dp</item>
+      <item name="android:textSize">17sp</item>
+      <!-- <item name="android:textColor">@color/textColor</item> -->
+    </style>
+  
+  <!--DescriptionPage Quiz TopicText TextView-->
+    <style name="TextView_DescriptionPage_TopicText" parent="AppTheme">
+      <item name="android:gravity">center</item>
+      <item name="android:layout_gravity">center_vertical</item>
+      <item name="android:layout_width">match_parent</item>
+      <item name="android:layout_height">wrap_content</item>
+      <item name="android:layout_marginTop">10dp</item>
+      <item name="android:layout_marginBottom">10dp</item>
+      <item name="android:textSize">20sp</item>
+      <item name="android:textStyle">bold</item>
+      <!-- <item name="android:textColor">@color/textColor</item> -->
+    </style>
+
+  <!-- DescriptionPage Quiz ImagePlaceHolder ImageView-->
+    <style name="ImageView_DescriptionPage_ImagePlaceHolder" parent="AppTheme">
+      <item name="android:layout_width">150dp</item>
+      <item name="android:layout_height">150dp</item>
+      <item name="android:layout_marginTop">20dp</item>
+      <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+  <!-- DescriptionPage Quiz DescriptionText TextView-->
+    <style name="TextView_DescriptionPage_DescriptionText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+  <!-- DescriptionPage Quiz StartQuizBotton -->
+    <style name="Botton_DescriptionPage_StartQuizButton" parent="AppTheme">
+      <item name="android:layout_height">45dp</item>
+      <item name="android:layout_width">170dp</item>
+      <item name="android:layout_gravity">center_horizontal</item>
+      <item name="android:layout_margin">50dp</item>
+      <item name="android:layout_marginTop">50dp</item>
+      <item name="android:textAllCaps">false</item>
+      <item name="android:textSize">20sp</item>
+      <item name="android:textColor">@android:color/white</item>
+    </style>
+
+  <!-- QuizPage NextBotton -->
+    <style name="Button_QuizPage_Next" parent="AppTheme">
+      <item name="android:layout_height">45dp</item>
+      <item name="android:layout_width">170dp</item>
+      <item name="android:layout_gravity">center_horizontal</item>
+      <item name="android:layout_margin">50dp</item>
+      <item name="android:textAllCaps">false</item>
+      <item name="android:textSize">20sp</item>
+      <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+
+</resources>
